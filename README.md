@@ -1,19 +1,116 @@
-# Spring Boot Microservices Project
+# Spring Boot Microservices
 
-Backend learning project demonstrating a multi-service architecture with separate Doctor, Patient, and Payment applications.
+A backend project demonstrating a microservices architecture using **Java** and **Spring Boot**.
 
-## Technologies
-- Java
-- Spring Boot
-- Maven
-- REST APIs
-- Microservices
+The project is divided into independent services for doctor, patient, and payment functionality.
 
-## Structure
+## 🚀 Technologies
+
+* Java
+* Spring Boot
+* Maven
+* RESTful APIs
+* Microservices
+
+## 📁 Project Structure
+
+```text
+spring-boot-microservices/
+│
+├── doctor/
+├── patient/
+├── payment/
+└── README.md
+```
+
 Each service has its own Maven configuration, application configuration, source code, and tests.
 
-## Purpose
-Practice decomposing backend functionality into independent business-focused services.
+## ⚙️ Installation
 
-## Status
-Portfolio learning project focused on Java, Spring Boot, REST APIs, and microservice fundamentals.
+Clone the repository:
+
+```bash
+git clone https://github.com/Zeyadtharwat66/spring-boot-microservices.git
+```
+
+Navigate to the project:
+
+```bash
+cd spring-boot-microservices
+```
+
+Build the individual services using Maven.
+
+For example:
+
+```bash
+cd doctor
+./mvnw spring-boot:run
+```
+
+On Windows:
+
+```powershell
+.mvnw.cmd spring-boot:run
+```
+
+Repeat the process for the other services.
+
+## ▶️ Running the Project
+
+The project contains three independent Spring Boot applications:
+
+* **Doctor Service**
+* **Patient Service**
+* **Payment Service**
+
+Each service can be started independently.
+
+## 📌 Main Features
+
+* Independent Spring Boot services
+* RESTful API communication
+* Separation of business responsibilities
+* Independent service configuration
+* Maven-based service projects
+
+## 🛠️ Architecture
+
+The project follows a service-based architecture:
+
+```text
+        ┌───────────────┐
+        │  Doctor       │
+        │  Service      │
+        └───────────────┘
+
+        ┌───────────────┐
+        │  Patient      │
+        │  Service      │
+        └───────────────┘
+
+        ┌───────────────┐
+        │  Payment      │
+        │  Service      │
+        └───────────────┘
+```
+
+Each service is developed and configured independently.
+
+## 🔮 Future Improvements
+
+* Service discovery
+* API gateway
+* Centralized configuration
+* Inter-service communication
+* Docker containerization
+* Distributed tracing
+* Authentication and authorization
+
+## 👨‍💻 Author
+
+**Zeyad Tharwat**
+
+## 📄 License
+
+This project is for learning and development purposes.
